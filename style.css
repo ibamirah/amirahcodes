@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Arima+Madurai&display=swap');
 body {
    /** background-color:#b5b2ac; **/
-    background-color: #c9c7c3;
+    background-color: #a2b4b4;
 }
 /**Index Page**/
 .nameTitle{
@@ -23,17 +23,16 @@ color: #000000;
     /* text-transform: uppercase; */
 }
 
-.profilePic{
+/* .about-img{ */
     /* size: 100px; */
-    max-width: 100%;
+    /* max-width: 100%;
     width: 420px;
-    height: auto;
-
-}
+    height: auto; */
+/* } */
 
 /**Nav Bar**/
 .navBar{
-    background-color: #c2c0bc;
+    background-color: #ebebea92;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -49,7 +48,7 @@ color: #000000;
 }
 
 .nav-item {
-	color: #2a2d34;
+	color: #7d8badd5;
     font-family: 'Amiri', serif;
 	float: right;
 	display: block;
@@ -86,7 +85,7 @@ color: #000000;
     font-size: 30px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .navBar {
      flex-direction: column;
     
@@ -99,9 +98,10 @@ color: #000000;
     #navName{
         font-size: 20px;
     }
-    .profilePic{
-        width: 420px;
+    .about-img{
+       
         height: auto;
+        width: auto;
     }
   }
 
@@ -172,13 +172,13 @@ font-family: 'Amiri', serif;
 font-weight: 20;
 font-size: 38px;
 line-height: 42px;
-color: #2a2d34;
+color: #d8d9da;
 text-align: center;
 }
 
 .about-img{
     height: 450px;
-    border: 2px solid #000000;
+    border: 2px solid #ccced0;
     border-radius: 5px;
     overflow-y:hidden;
 	margin: 40px;
@@ -204,7 +204,7 @@ text-align: center;
     position: relative;
     top: 10px;
 
-    box-shadow: 12px 12px 1px #878484;
+    box-shadow: 12px 12px 1px #a4a1a1;
 
   }
   
@@ -239,7 +239,7 @@ text-align: center;
     color: white;
     font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
     font-size: 11pt;
-    background: #30353A;
+    background: #4f5c68;
     padding: 10px;
     box-sizing: border-box;
     position: absolute;
@@ -320,6 +320,7 @@ ul {
 	font-family: 'Amiri', serif;
         font-weight: 100;
         font-size: 20px;
+        color: #5e6061fb;
 }
 
 #education-section h1{
@@ -327,7 +328,7 @@ ul {
     font-weight: 70;
     font-size: 38px;
     line-height: 42px;
-    color: #2a2d34;
+    color: #d8d9da;
 }
 #education-title img {
 	width: 10%;
@@ -382,13 +383,15 @@ ul {
 
 /* EXPERIENCE SECTION */
 .projects{
-    display: block;
+   
     justify-content: center;
 	text-align: center;
+    color: #d8d9da;
    
 }
 #proj-section{
     margin: 40px;
+    
    
 }
 #myBtnContainer{
@@ -421,53 +424,64 @@ ul {
 }
 .proj{
 
-    width:350px;
-    height: 350px;
-    margin: 3%;
-    background-color: #84827c;
-    display: none;
-    border-radius: 9px;
-    overflow-y:auto;
-   
+    position: relative;
+	height: 320px;
+	width: 330px;
+	margin: 3%;
+	display: none;
 }
 .show {
 	display: block;
   }
 
-/* .proj-img {
-	width: 350px;
-	height: 350px;
-	border-radius: 6px;
-} */
+.proj-img {
+    width: 320px;
+    height: 330px;
+    border-radius: 9px;
+  
+}
 
+.view{
+    color: #e3e0e0;
+}
 
-/* .proj-description {
+.proj-description {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #F8F8F8;
-	color: #fff;
+    border-radius: 9px;
+	background: #5f5e5ef4;
 	visibility: hidden;
 	opacity: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: opacity .4s, visibility .4s;
-} */
-/* .proj:hover .proj-description {
+}
+
+.proj:hover .proj-description {
 	visibility: visible;
-	opacity: 0.9;
+	/* opacity: .9; */
+    width: 320px;
+    height: 330px;
 }
 
 .proj-description:hover {
-	opacity: 1;
-} */
+	opacity: .7;
+    width: 320px;
+    height: 330px;
+}
+
+
 .img-description {
-	transition: .5s;
-	color: #fff9f0;
+    /* transition: .5s; */
+	color: #e3e0e0;
 	text-align: center;
+    height: 320px;
+	width: 330px;
+    
 	margin-left: 25px;
 	margin-right: 25px;
 	padding-left: 25px;
@@ -475,11 +489,12 @@ ul {
 }
 .img-description i {
 	font-size: 12px;
+    font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-weight: 100;
 }
 
-.img-description:hover {
-	opacity: 1;
-}
+
 
 .img-description h2, .img-description p, .img-description a {
 	font-family: 'Lato', sans-serif;
@@ -487,6 +502,10 @@ ul {
 	font-weight: 100;
 
 }
+/* .img-description:hover {
+	opacity: .7;
+} */
+
 
 /* CONTACT ME */
 .contact-me{
